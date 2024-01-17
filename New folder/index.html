@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+        </style>
+      
+</head>
+<body>
+   
+        <div class="status">
+          <div class="life-indicator">
+            <div class="life-marker"></div>
+            <div class="life-marker"></div>
+            <div class="life-marker"></div>
+            <div class="life-marker"></div>
+          </div>
+          <div class="catch-indicator">
+            <label class="mouseblob catch-label"></label>
+            <span>
+              x
+            </span>
+            <div class="catch-no no">
+            </div>
+          </div>
+      
+          <div class="time-indicator no">
+            90
+          </div>
+        </div>
+      
+        <div class="overlay wrapper flex-center overflow-hidden">
+          <div class="cursor d-none"></div>
+          <div class="message-window flex-center">
+            <div class="message">
+              <h1 class="title">catblob 2</h1>
+            </div>
+            <div class="how-to-play">
+              <p>Catch all mouseblobs within the time limit, while avoiding dogblobs.</p>
+              <p>Move around with the arrow keys or the onscreen control UI.</p>
+              <p>Create/destroy pink blocks by clicking or touching map.</p>
+            </div>
+            <button class="start">start</button>
+          </div>
+        </div>
+        <div class="main wrapper overflow-hidden flex-center">
+          <div class="map-cover flex-center overflow-hidden">
+            <div class="map-image-wrapper">
+              <canvas class="map-image"></canvas>
+            </div>
+            <div class="player sprite-container">
+              <div class="overflow-hidden">
+                <div class="catblob sprite"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="control-wrapper">
+          <div class="control"></div>
+        </div>
+      
+        <img class="map-tiles d-none" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAwCAYAAACWqXFuAAAAAXNSR0IArs4c6QAAA7NJREFUeF7tnMFxGzEMRaVO0k1q8C1tuAK1kZtrSDfpxBk6YkJRS+Iv8QFyV/DFnlkSAD8esJTI8fVy//n+7fKZ/36F379+X669ddZ6SOOTLS8NkViY8bD9lfa+kuAl3GpgbwkradFLhjSXtX4JCKs4WH4DwDsJZwTQCr5cPIwCfADQOmBW1VvZKcVAtWglAZ2vXQsDgtEYGL4DwEL9MwE4uwBQ/wFgADjaAL/mad8AAaARgD/f3z8/Pm6q5EqT397eLz9ut81P8GgHknxIz6kAeogmLWjW8zqZaAJbCfDQMgCcRYuBXwsAU5hWXTDFm35O1wEtRTPghmJyK5mMDlgGxwIxx5ptnxJASlYVRvYmq07KqOsymWwAR2OS5jEArPXboz99Dygt2Os5KgILvvp19ioAtvRD9Q8A73shRmEwO2CKJ30QYcTVstHqfmk8WkBLAeghGpoQtAJZHbBOJprA3mlAAChn++ks2Fo0OaS/I84AoGVB97rfoTugpWgofN4AbiWT0QHL9bIKWwIv+0TjX+4VvAWJ5X047SZ2D9RbY0fOf1s+GYfz0no8fEgxIOtHC6C09XSkIxlhiHF2ACUNGcne2/VGfUrztMUcACpvgtfFZAVfBsHbnyuAqHjaDqadL4kiPddWbWnfGwhvf9ZaPnTAAFCS+/k5E2bU+wyfLnvAABBF4P+4GTDM8BkA7mejOYOZQKYtdIkzfLoAiNxn691H085HOzCaKCvRWnvAI8Y/W8uHPaAWIO38IyZwRjea4dOqmJ8AzI7qY7Hy2/PWN/PlN/8j8wNArB+9BIA9KRAAR+YHgH4Aau4DMrYg2X+zA44AhJ59Mi5UYqnaHsXsIExb6Jq0PrVnwVoAS/8BIPEk5CgdfFkAE9lSF5NuZmjmHyWB2g6AdjqrjX8A2FA2AMTQPO0ruFx+3cmkzldLNzI/AHxBAEeSvudKVm8sIvfIvUTELntMKri9RToag6ev0RjReVcWgC07bADzwrR2UYFinK0CFAB7EGtBsbRtK21YRxQIABGVYoyZAmoApVe4ZQdMqmjtmykbhiEFAkBIphhkpUAAaKVs2IUUCAAhmWKQlQJqAK0CQ+3GHhRVas1xAaCQF2vA18TCL6prPjJD/y/Lap88rQGxtu+X6jU9/QMwhYdCuNJXH9aAWNtfEwu/qA4PYJLK8rTE0rZfmtf1FAAq9oArvQnWRawf2SkA7HVBLSRWlyyOCgw77tMAmIVhX99i22MnsFy3ttjQ2JImLF9/APBEX8DU6jV/AAAAAElFTkSuQmCC">
+      
+        <div class="sign">
+          by masahito / <a href="http://www.ma5a.com/">ma5a.com</a>
+        </div>
+      
+
+    <script src="script.js"></script>
+</body>
+</html>
